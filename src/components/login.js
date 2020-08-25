@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button,Form,FormGroup,Input, Label} from 'reactstrap';
 import {FacebookLoginButton,GoogleLoginButton,GithubLoginButton} from 'react-social-login-buttons';
+import {Link} from 'react-router-dom';
 
 function  Login(){
     return(
@@ -26,9 +27,9 @@ function  Login(){
       <GoogleLoginButton className="mt-3 mb-3"/>
       <GithubLoginButton className="mt-3 mb-3" />
       <div className="text-center">
-        <a href="/signup">Sign up</a>
+        <Link to="/signup">Sign up</Link>
         <span className="p-2">|</span>
-        <a href="/forgot password?">Forgot Password</a>
+        <Link to="/forgot password?">Forgot Password</Link>
       </div>
     </Form>
     </React.Fragment>

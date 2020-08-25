@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button,Form,FormGroup,Input, Label} from 'reactstrap';
 import {FacebookLoginButton,GoogleLoginButton,GithubLoginButton} from 'react-social-login-buttons';
-
+import {Link} from 'react-router-dom'
 
 function Signup(){
     return(
@@ -39,9 +39,9 @@ function Signup(){
           <GoogleLoginButton className="mt-3 mb-3"/>
           <GithubLoginButton className="mt-3 mb-3" />
           <div className="text-center">
-            <a href="/">Already existing user?</a>
+            <Link to="/">Already existing user?</Link>
             <span className="p-2">|</span>
-            <a href="/recruiter-signup">Are you a recruiter?</a>
+            <Link to="/recruiter-signup">Are you a recruiter?</Link>
           </div>
         </Form>
         </React.Fragment>
